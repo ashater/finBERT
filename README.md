@@ -15,6 +15,8 @@ FinBERT implementation relies on Hugging Face's `pytorch_pretrained_bert` librar
  activating it.
 ```bash
 conda env create -f environment.yml
+# step to get older version of pytorch from pytorch channel
+conda install pytorch==1.1.0 torchvision==0.3.0 cudatoolkit=10.0 -c pytorch
 conda activate finbert
 ```
 
