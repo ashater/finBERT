@@ -405,9 +405,9 @@ class FinBert(object):
                         param.requires_grad = True
 
                 batch = tuple(t.to(self.device) for t in batch)
-
+                
                 input_ids, attention_mask, token_type_ids, label_ids, agree_ids = batch
-
+              
                 logits = model(input_ids, attention_mask, token_type_ids)[0]
                 weights = self.class_weights.to(self.device)
 
